@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <script src="scripts.js"></script>
+ <title>STUDENT</title>
+ </head>
+ <body>
+ <form method="post">
+        Name : <input type="text" name="name"  th:field="*{name}" />
+        <br><br>
+        Id : <input type="number" Id="demoid" th:field="*{id}" /> 
+        <br>
+        <input type="button" value="add" onclick="addln()">
+        <input type="button" value="delete" onclick="deleteln()">
+        <input type="button" value="update"  onclick="updateln()">
+         <input type="button" value="get all stud"  onclick="allln()">
+ 		<input type="button" value="get stud"  onclick="userln()">
+ </form>
+ <div Id="Name"></div>
+ <h2>Students List</h2>
+<table border="1">
+<tr>
+<th>Id</th>
+<th>Name</th>
+</tr>
+<tbody id="studentInfo">
+
+</tbody>
+</table>
+ 
+</body>
+</html>
