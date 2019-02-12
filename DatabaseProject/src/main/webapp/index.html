@@ -7,9 +7,9 @@
  </head>
  <body>
  <form method="post">
-        Name : <input type="text" name="name"  th:field="*{name}" />
+        Name : <input type="text" name="name"  id="studentName" th:field="*{name}" />
         <br><br>
-        Id : <input type="number" Id="demoid" th:field="*{id}" /> 
+        Id : <input type="number" id="studentId" th:field="*{id}" /> 
         <br>
         <input type="button" value="add" onclick="addln()">
         <input type="button" value="delete" onclick="deleteln()">
